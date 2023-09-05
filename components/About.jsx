@@ -8,10 +8,7 @@ const About = () => {
         <div id='about' className='w-full md:h-screen p-2 flex items-center py-16 dark:bg-gray-800'>
             <div className='max-w-[1240px] m-auto md:grid grid-cols-3 gap-8'>
                 <div className='col-span-2'>
-                    <div className='w-full h-[50vh] mt-10 shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4'>
-                        <Image src={AboutImg} className='rounded-xl w-full h-full' alt='/' />
-
-                    </div>
+                <img className='w-{750px} h-{550px}' src={"https://fresherbro.com/wp-content/uploads/2023/09/GlobalLogic-is-hiring-Associate-Analyst-jpg-1024x512.webp"} alt={"ddd"} className="w-full h-48 object-cover" />
                     <p className='mt-2'>September 4, 2023</p>
                     <h2 className='mt-2'>GlobalLogic Off Campus Hiring: Associate Analyst Roles</h2>
                     <p className='mt-2'> GlobalLogic is a renowned multinational company specializing in software product engineering, digital transformation, and consulting services. Founded in </p>
@@ -26,7 +23,6 @@ const About = () => {
                     </p>
                     <p className='py-2 text-gray-600 dark:text-gray-300'>
                         In addition to my technical skills, I am committed to staying up-to-date with industry trends and learning new technologies. I enjoy working in a team environment and have strong problem-solving and communication skills.
-                        My goal as a Junior Full Stack Web Developer is to continue to develop my skills and expertise while creating impactful software solutions. I am excited about the opportunity to work with other talented developers and designers to create innovative and user-focused web applications.
                     </p>
                     <Link href='/#projects'>
                         <p className='py-2 text-gray-600 underline cursor-pointer dark:text-blue-400'>

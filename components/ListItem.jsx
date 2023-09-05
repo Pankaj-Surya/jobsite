@@ -13,48 +13,10 @@ const ListItem = () => {
     ];
 
     return (
-        <div id='ListItem' className='w-full md:h-screen p-2 flex items-center py-16 dark:bg-gray-800'>
+        <div id='ListItem' className='w-full md:h-screen  flex items-center py-8 dark:bg-gray-800'>
             <div className='max-w-[1240px] m-auto md:grid grid-cols-3 gap-8'>
                 <div className='col-span-2'>
-                    {/* <div className='w-full h-[50vh] mt-10 shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4'>
-                        <Image src={AboutImg} className='rounded-xl w-full h-full' alt='/' />
-
-                    </div>
-                    <p className='mt-2'>September 4, 2023</p>
-                    <h2 className='mt-2'>GlobalLogic Off Campus Hiring: Associate Analyst Roles</h2>
-                    <p className='mt-2'> GlobalLogic is a renowned multinational company specializing in software product engineering, digital transformation, and consulting services. Founded in </p> */}
-
-
-                    <div class="container mx-auto p-4">
-                        <div class="grid grid-cols-2 gap-4">
-                            {/* <!-- First Column --> */}
-                            <div class="col-span-1 bg-gray-200 p-4 border border-red-400">
-                                {/* <!-- Content for the first column goes here --> */}
-                                <div className='w-full h-[50vh] mt-10 shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4'>
-                                    <Image src={AboutImg} className='rounded-xl w-full h-full' alt='/' />
-
-                                </div>
-                                <p className='mt-2'>September 4, 2023</p>
-                                <h2 className='mt-2'>GlobalLogic Off Campus Hiring: Associate Analyst Roles</h2>
-                                <p className='mt-2'> GlobalLogic is a renowned multinational company specializing in software product engineering, digital transformation, and consulting services. Founded in </p>
-                            </div>
-
-                            {/* <!-- Second Column --> */}
-                            <div class="col-span-1 bg-blue-200 p-4">
-                                {/* <!-- Content for the second column goes here --> */}
-                                <div className='w-full h-[50vh] mt-10 shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4'>
-                                    <Image src={AboutImg} className='rounded-xl w-full h-full' alt='/' />
-
-                                </div>
-                                <p className='mt-2'>September 4, 2023</p>
-                                <h2 className='mt-2'>GlobalLogic Off Campus Hiring: Associate Analyst Roles</h2>
-                                <p className='mt-2'> GlobalLogic is a renowned multinational company specializing in software product engineering, digital transformation, and consulting services. Founded in </p>
-                            </div>
-                        </div>
-                    </div>
-
-
-
+                  
                     <div className="container mx-auto p-4">
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
 

@@ -6,6 +6,7 @@ import Projects from '../components/Projects'
 import Skills from '../components/Skills'
 import Navbar from '@/components/NavBar'
 import ListItem from '@/components/ListItem'
+import TwoSection from '@/components/TwoSection'
 
 export default function Home({ darkMode, setDarkMode }) {
 
@@ -21,6 +22,7 @@ export default function Home({ darkMode, setDarkMode }) {
       {/* <Main /> */}
       <About />
       <ListItem/>
+      {/* <TwoSection/> */}
       {/* <Skills />
       <Projects /> */}
       {/* <Contact /> */}
