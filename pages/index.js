@@ -5,6 +5,7 @@ import Main from '../components/Main'
 import Projects from '../components/Projects'
 import Skills from '../components/Skills'
 import Navbar from '@/components/NavBar'
+import ListItem from '@/components/ListItem'
 
 export default function Home({ darkMode, setDarkMode }) {
 
@@ -19,9 +20,10 @@ export default function Home({ darkMode, setDarkMode }) {
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
       {/* <Main /> */}
       <About />
+      <ListItem/>
       {/* <Skills />
       <Projects /> */}
-      <Contact />
+      {/* <Contact /> */}
     </>
   )
 }
