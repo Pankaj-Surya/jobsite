@@ -5,6 +5,7 @@ import Link from 'next/link';
 import ListItem from './ListItem';
 import BannerSection from './BannerSection';
 import RecentJobsSection from './RecentJobsSection';
+import AboutUsSection from './AboutUsSection';
 
 const About = () => {
 
@@ -21,6 +22,7 @@ const About = () => {
                 <BannerSection image={obj.image} date={obj.date} title={obj.title} desc={obj.desc} />
 
                 <div className='col-span-1 flex flex-col items-center'>
+                    <AboutUsSection />
                     <h2 className='dark:text-[#a6b595] pb-2 mb-4'>Recent Jobs</h2>
                     <RecentJobsSection image={obj.image} date={obj.date} title={obj.title} desc={obj.desc} />
                 </div>
