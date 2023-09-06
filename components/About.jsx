@@ -8,7 +8,7 @@ import BannerSection from './BannerSection';
 const About = () => {
 
     const obj = {
-        image : "https://www.pexels.com/photo/silhouette-photo-of-woman-against-during-golden-hour-39853/",
+        image : "https://images.pexels.com/photos/443383/pexels-photo-443383.jpeg",
         date : "September 4, 2023",
         title : "GlobalLogic Off Campus Hiring: Associate Analyst Roles",
         desc : "GlobalLogic is a renowned multinational company specializing in software product engineering, digital transformation, and consulting services. Founded in.."
@@ -17,7 +17,7 @@ const About = () => {
         <div id='about' className='w-full md:h-max p-2 flex items-center pt-14 pb-4 dark:bg-gray-800'>
             <div className='max-w-[1240px] m-auto mt-16 md:grid grid-cols-3 gap-8'>
                 
-                <BannerSection obj={obj}/>
+                <BannerSection image={obj.image} date={obj.date} title={obj.title} desc={obj.desc}/>
 
                 <div className='col-span-1'>
 
