@@ -7,7 +7,7 @@ function BannerSection({ image, date, title, desc }) {
     return (
         <div className='col-span-2'>
             {/* <Image className='object-fit rounded-xl' src={image} width={700} height={400} alt='aa'/> */}
-            <img className='w-90 object-cover rounded-xl' src={image} alt={"ddd"} />
+            <img className='h-1/4 w-full object-cover rounded-xl' src={image} alt={"ddd"} />
             <p className='mt-4'>{date}</p>
             <h2 className='mt-2'>{title}</h2>
             <p className='mt-2'>{desc}</p>
