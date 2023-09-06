@@ -9,8 +9,8 @@ import { useRouter } from 'next/router';
 
 const Navbar = ({ darkMode, setDarkMode }) => {
     const [nav, setNav] = useState(false);
-    const [shadow, setShadow] = useState(false);
-    const [navBg, setNavBg] = useState('#ecf0f3');
+    // const [shadow, setShadow] = useState(false);
+    const [navBg, setNavBg] = useState('#000000');
     const [linkColor, setLinkColor] = useState('#1f2937');
     const [logo, setLogo] = useState(true);
     const router = useRouter();
@@ -38,24 +38,24 @@ const Navbar = ({ darkMode, setDarkMode }) => {
         }
     }, [router]);
 
-    useEffect(() => {
-        const handleShadow = () => {
-            if (window.scrollY >= 1) {
-                setShadow(true);
-            } else {
-                setShadow(false);
-            }
-        };
-        window.addEventListener('scroll', handleShadow);
-    }, []);
+    // useEffect(() => {
+    //     const handleShadow = () => {
+    //         if (window.scrollY >= 1) {
+    //             setShadow(true);
+    //         } else {
+    //             setShadow(false);
+    //         }
+    //     };
+    //     window.addEventListener('scroll', handleShadow);
+    // }, []);
 
     return (
-        <div
-            className={
-                shadow
-                    ? `fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300 bg-[${navBg}] dark:bg-gray-900`
-                    : `fixed w-full h-20 z-[100] bg-[${navBg}] dark:bg-gray-900`
-            }
+        <div className={`fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300 bg-[${navBg}] dark:bg-gray-900`}
+            // className={
+            //     shadow
+            //         ? `fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300 bg-[${navBg}] dark:bg-gray-900`
+            //         : `fixed w-full h-20 z-[100] bg-[${navBg}] dark:bg-gray-900`
+            // }
         >
             <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16 '>
                 <Link href='/'>

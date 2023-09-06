@@ -1,19 +1,23 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import AboutImg from '../public/assets/download.png'
+// import AboutImg from '../public/assets/download.png'
+import ListItem from './ListItem';
+import BannerSection from './BannerSection';
 
 const About = () => {
-    return (
-        <div id='about' className='w-full md:h-screen p-2 flex items-center py-16 dark:bg-gray-800'>
-            <div className='max-w-[1240px] m-auto md:grid grid-cols-3 gap-8'>
-                <div className='col-span-2'>
-                <img className='w-{750px} h-{550px}' src={"https://fresherbro.com/wp-content/uploads/2023/09/GlobalLogic-is-hiring-Associate-Analyst-jpg-1024x512.webp"} alt={"ddd"} className="w-full h-48 object-cover" />
-                    <p className='mt-2'>September 4, 2023</p>
-                    <h2 className='mt-2'>GlobalLogic Off Campus Hiring: Associate Analyst Roles</h2>
-                    <p className='mt-2'> GlobalLogic is a renowned multinational company specializing in software product engineering, digital transformation, and consulting services. Founded in </p>
 
-                </div>
+    const obj = {
+        image : "https://www.pexels.com/photo/silhouette-photo-of-woman-against-during-golden-hour-39853/",
+        date : "September 4, 2023",
+        title : "GlobalLogic Off Campus Hiring: Associate Analyst Roles",
+        desc : "GlobalLogic is a renowned multinational company specializing in software product engineering, digital transformation, and consulting services. Founded in.."
+    }
+    return (
+        <div id='about' className='w-full md:h-max p-2 flex items-center pt-14 pb-4 dark:bg-gray-800'>
+            <div className='max-w-[1240px] m-auto mt-16 md:grid grid-cols-3 gap-8'>
+                
+                <BannerSection obj={obj}/>
 
                 <div className='col-span-1'>
 
