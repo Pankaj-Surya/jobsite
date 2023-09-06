@@ -4,13 +4,13 @@ import Link from 'next/link';
 // import AboutImg from '../public/assets/download.png'
 
 const ListItem = () => {
-    
+
     return (
         <div id='ListItem' className='w-full md:h-screen  flex items-center py-2 dark:bg-gray-800'>
             <div className='max-w-[1240px] m-auto md:grid grid-cols-2 gap-8'>
                 <div className='col-span-2'>
-                  
-                    <div className="container mx-auto p-4">
+
+                    <div className="container mx-auto">
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
 
                             <div className="bg-white rounded-lg overflow-hidden shadow-md">
